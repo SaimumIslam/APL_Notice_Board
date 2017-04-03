@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.foysal.noticeboard.CreateNotice"
+    android:weightSum="1"
+    android:background="@drawable/not">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        android:ems="10"
+        android:id="@+id/Title"
+        android:background="@android:color/background_light" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimary" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/Description"
+        android:layout_weight="0.18"
+        android:background="@android:color/background_light" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/NoticeType"
+            android:hint="Notice Type"
+            android:background="@android:color/background_light"
+            android:layout_weight="0.33" />
+
+        <Button
+            android:id="@+id/Post"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="0.25"
+            android:background="@android:color/holo_green_light"
+            android:text="Post"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic" />
+    </LinearLayout>
+
+</LinearLayout>
